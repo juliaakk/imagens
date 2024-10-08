@@ -1,0 +1,36 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/236x/ad/5d/c8/ad5dc85384362186d7f9e1562c23cff0.jpg);
+}
+
+.galeria{
+    margin: 0%;
+   display: flex;
+ height: 100vh;
+gap: 0.1px;
+}
+
+.galeria div{
+
+    flex: 1;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s cubic-bezier(.38,.23,.7,.72);
+}
+.galeria div:hover{
+    flex: 4;
+}
+
+
+.galeria:hover div:not(:hover){
+opacity: 0;
+}
+h2{
+    color: rgb(118, 138, 253);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
